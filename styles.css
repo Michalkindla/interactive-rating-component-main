@@ -1,0 +1,134 @@
+*{
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: black;
+    width: 100%;
+    color: var(--White);
+    overflow: hidden;
+}
+h1{
+    font-weight: 700;
+}
+h2{
+    font-size: 1rem;
+    color: var(--LightGrey);
+}
+.container{
+    padding: 5px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--VeryDarkBlue);
+    min-width: 400px;
+    width:30%;
+    max-width: 410px;
+}
+.card{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding: 10px;
+    text-align: justify;
+    
+}
+.star{
+    position: relative;
+    top: 15px;
+    left: 15px;
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--DarkBlue);
+    border-radius: 50%;
+}
+.star img{
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.ratings{
+    display: flex;
+    justify-content: space-around;   
+    margin-bottom: 20px; 
+}
+.ratings input{
+    color: var(--LightGrey);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: var(--DarkBlue);
+    border: none;
+    cursor: pointer;
+}
+.ratings input:focus{
+    color: var(--White);
+    background-color: var(--LightGrey);
+}
+.ratings input:hover{
+    background-color: var(--Orange);
+    transform: scale(1.2);
+}
+.submit{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;     
+}
+.submit input{
+    background-color: var(--Orange);
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: var(--White);
+    border: none;
+    cursor: pointer;
+}
+.submit input:hover{
+    transform: scale(1.2);
+}
+.attribution{
+    display: none;
+}
+.thank{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+#result{
+    color: var(--Orange);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    background-color: var(--DarkBlue);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.cardThx{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+.inactive{
+    position: absolute;
+    display: none;
+}
